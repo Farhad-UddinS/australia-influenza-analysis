@@ -35,6 +35,16 @@ The box chart below shows how much warning each state got across 12 to 15 season
 
 Victoria is the most predictable: most years land between 8 and 9.5 weeks. NT is the least reliable. In some years the signal fired the same week as the peak, which is no warning at all. That fits NT's tropical climate, where flu doesn't follow a clear winter season.
 
+**Bigger numbers don't always mean a worse year.** 2024 had the most cases on record (364k). But far more people got tested after COVID, so some of that jump is just more testing.
+
+**COVID almost wiped flu out.** 2020 had 21k cases. 2021 had fewer than 1,000.
+
+**Young people make up a big share of cases.** People aged 5 to 19 were about a third of cases from 2022 to 2024. Kids under 5 were another 13%. These are raw counts though, not rates, so I can't say who's most at risk yet.
+
+**It's mostly influenza A.** B had its big years in 2008 and 2015. In 2024, 96% of cases were A.
+
+![Flu cases by year](images/season_totals.png)
+
 ### The odd years (the circles)
 
 Six seasons sit outside the normal range on the box chart. I went back to check each one.
@@ -62,16 +72,6 @@ So the weak spot is that the rule leans too hard on how busy January to March wa
 - **Use more than one summer.** Base it on the average of the last three years instead of just the current one, so one unusual summer can't throw it off.
 - **Use rates instead of counts.** Cases per 100,000 people, using ABS population data, would also soften the jump in testing after COVID.
 - **Then re-run the box chart.** If the circles shrink, the rule got better.
-
-**Bigger numbers don't always mean a worse year.** 2024 had the most cases on record (364k). But far more people got tested after COVID, so some of that jump is just more testing.
-
-**COVID almost wiped flu out.** 2020 had 21k cases. 2021 had fewer than 1,000.
-
-**Young people make up a big share of cases.** People aged 5 to 19 were about a third of cases from 2022 to 2024. Kids under 5 were another 13%. These are raw counts though, not rates, so I can't say who's most at risk yet.
-
-**It's mostly influenza A.** B had its big years in 2008 and 2015. In 2024, 96% of cases were A.
-
-![Flu cases by year](images/season_totals.png)
 
 ## Limitations
 
