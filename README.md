@@ -35,6 +35,34 @@ The box chart below shows how much warning each state got across 12 to 15 season
 
 Victoria is the most predictable: most years land between 8 and 9.5 weeks. NT is the least reliable. In some years the signal fired the same week as the peak, which is no warning at all. That fits NT's tropical climate, where flu doesn't follow a clear winter season.
 
+### The odd years (the circles)
+
+Six seasons sit outside the normal range on the box chart. I went back to check each one.
+
+| State | Year | Warning | What happened |
+| --- | --- | --- | --- |
+| Vic | 2008 | 21 weeks | Summer level was tiny (1.5 cases a week) |
+| NSW | 2008 | 18 weeks | Summer level was tiny (5.5 cases a week) |
+| Vic | 2017 | 13 weeks | Huge season that built up slowly |
+| Vic | 2009 | 5 weeks | Swine flu pandemic, fast and early |
+| Vic | 2018 | 4 weeks | Mild year straight after the huge 2017 season |
+| NSW | 2018 | 2 weeks | Mild year straight after the huge 2017 season |
+
+They fall into three groups:
+
+- **Summer was too quiet (2008).** Not many people got tested back then. Three times almost nothing is still almost nothing, so the alarm went off far too early. 2022 has the same problem after two years of almost no flu.
+- **Summer was too busy (2018).** After 2017, a lot more people were getting tested even in summer. Three times that level took ages to reach, so the alarm went off late.
+- **Unusual seasons (2009 and 2017).** A pandemic that hit fast and a big season that built slowly. No simple rule handles these perfectly.
+
+So the weak spot is that the rule leans too hard on how busy January to March was that one year.
+
+### How I'd make the rule better
+
+- **Set a minimum summer level.** Never let the baseline drop below a floor, for example 20 cases a week. That would fix 2008 and 2022.
+- **Use more than one summer.** Base it on the average of the last three years instead of just the current one, so one unusual summer can't throw it off.
+- **Use rates instead of counts.** Cases per 100,000 people, using ABS population data, would also soften the jump in testing after COVID.
+- **Then re-run the box chart.** If the circles shrink, the rule got better.
+
 **Bigger numbers don't always mean a worse year.** 2024 had the most cases on record (364k). But far more people got tested after COVID, so some of that jump is just more testing.
 
 **COVID almost wiped flu out.** 2020 had 21k cases. 2021 had fewer than 1,000.
@@ -45,13 +73,28 @@ Victoria is the most predictable: most years land between 8 and 9.5 weeks. NT is
 
 ![Flu cases by year](images/season_totals.png)
 
-## Where it falls short
+## Limitations
 
-- **This counts people who got tested, not everyone who got sick.** Testing went up a lot after 2020.
-- **No population rates yet.** I'd need ABS population data to compare states or age groups fairly.
-- **Some fields are mostly empty.** Indigenous status is unknown for 55% of cases. About 70% have no flu subtype, so I only compared A against B.
-- **My early-warning rule broke in 2022.** After two years of almost no flu, the summer baseline was close to zero, so the rule fired straight away in every state. It needs a minimum baseline to be reliable.
-- **The data only updates once a year.** Good for spotting patterns, not for live alerts.
+**This is confirmed cases, not everyone who had flu.**
+Each row is a person who got a lab test that came back positive. People who were sick but didn't see a doctor, or saw one and weren't tested, aren't in it. Negative tests aren't in it either, so there's no way to tell how many tests were done.
+
+**More cases doesn't always mean more flu.**
+How many sick people get tested changes over time. Among Australians with fever and cough, the share who got a flu test went from 2.9% in 2016 to 5.0% in 2017 ([Flutracking](https://ojs.cdi.cdc.gov.au/index.php/cdi/article/view/633/2565)). NSW Health put most of its 2017 rise down to GPs and emergency departments using more sensitive tests ([NSW Health](https://www.health.nsw.gov.au/news/Pages/20170901_02.aspx)). Testing jumped again after COVID. So 2008 looks small and 2024 looks huge partly because of testing, not just flu.
+
+**Testing changes confuse the early-warning rule.**
+The rule compares each season to that year's January to March level. In 2008 hardly anyone was tested in summer, so the level was tiny and the alarm went off far too early. In 2018 summer testing was much higher, so the alarm went off late. 2022 had the same problem as 2008 after two years of almost no flu.
+
+**No population rates yet.**
+Bigger states and age groups will always have more cases. Fair comparisons need ABS population data to get cases per 100,000.
+
+**Some fields are mostly empty.**
+Indigenous status is unknown for 55% of cases. About 70% have no flu subtype, so I only compared A against B.
+
+**NT doesn't fit the pattern.**
+Its tropical climate means flu doesn't follow a winter season, so a rule built around a quiet summer works poorly there.
+
+**The data updates once a year.**
+Good for finding patterns, not for live alerts.
 
 ## How I did it
 
