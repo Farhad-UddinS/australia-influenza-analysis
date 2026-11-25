@@ -14,7 +14,26 @@ To answer them I used every lab-confirmed flu case reported in Australia from 20
 
 **Flu season now arrives earlier.** Before COVID, cases usually peaked in mid to late August. Since 2022 the peak has come anywhere from late May to early August. You can see it in the chart above: 2022 (green) and 2024 (purple) both peak well before 2017 (blue).
 
+The chart below breaks it down by state. Each dot is the week that state's season peaked, and lower means earlier. From 2008 to 2018 most seasons peaked around weeks 33 to 37, apart from early years like 2009 and 2012. In 2019, 2022 and 2023 most states dropped to weeks 21 to 27. 2024 crept back up to weeks 27 to 32, still earlier than the old pattern. So the shift may have started in 2019, just before COVID. (2020 and 2021 are missing because there was barely any flu.)
+
+![Peak week of the flu season by state](images/peak_timing.png)
+
 **You get a decent warning.** I tested a simple rule. If weekly cases stay at three times the usual summer level for two weeks in a row, call it the start of the season. That signal shows up about 6 to 11 weeks before the peak in most states. That's plenty of time to tell people to get vaccinated.
+
+The box chart below shows how much warning each state got across 12 to 15 seasons. The grey line in each box is the typical (median) year. The box holds the middle half of years, and the whiskers and circles show the extremes.
+
+![Weeks between the onset signal and the season peak, by state](images/early_warning.png)
+
+| State | Typical warning | Shortest | Longest |
+| --- | --- | --- | --- |
+| SA | 11 weeks | 2 | 17 |
+| Tas | 9 weeks | 3 | 21 |
+| Vic | 8 weeks | 4 | 21 |
+| NSW, ACT, WA | 7 weeks | 2 to 6 | 13 to 18 |
+| Qld | 6.5 weeks | 2 | 12 |
+| NT | 6 weeks | 0 | 14 |
+
+Victoria is the most predictable: most years land between 8 and 9.5 weeks. NT is the least reliable. In some years the signal fired the same week as the peak, which is no warning at all. That fits NT's tropical climate, where flu doesn't follow a clear winter season.
 
 **Bigger numbers don't always mean a worse year.** 2024 had the most cases on record (364k). But far more people got tested after COVID, so some of that jump is just more testing.
 
