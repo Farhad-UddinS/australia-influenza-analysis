@@ -1,0 +1,5 @@
+# Raw source file is large and downloadable from the official site
+data/raw/
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
